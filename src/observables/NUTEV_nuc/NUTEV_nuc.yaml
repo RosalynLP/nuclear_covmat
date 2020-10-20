@@ -1,0 +1,18 @@
+meta:
+   author: Rosalyn Pearson
+   title: Theoretical predictions
+
+theoryid: 53
+
+use_cuts: False
+
+pdf: nNNPDF20_nlo_as_0118_Fe56
+
+experiments:
+   - experiment: NUTEV
+     datasets:
+         - dataset: NTVNUDMNFe
+         - dataset: NTVNBDMNFe
+
+actions_:
+   - experiments::experiment experiment_result_table
