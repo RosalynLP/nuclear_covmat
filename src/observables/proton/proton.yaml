@@ -22,4 +22,4 @@ experiments:
          - dataset: DYE605
 
 actions_:
-   - experiments::experiment experiment_result_table
+   - experiment_result_table
