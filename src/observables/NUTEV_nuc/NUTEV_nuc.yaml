@@ -4,15 +4,15 @@ meta:
 
 theoryid: 53
 
-use_cuts: False
+use_cuts: fromfit
 
+fit: 130920-nnpdf40_jcm_iterated_70k_epochs
 pdf: nNNPDF20_nlo_as_0118_Fe56
 
-experiments:
-   - experiment: NUTEV
-     datasets:
+dataset_inputs:
          - dataset: NTVNUDMNFe
          - dataset: NTVNBDMNFe
 
 actions_:
-   - experiment_result_table
+   - group_result_table
+   - groups_covmat
