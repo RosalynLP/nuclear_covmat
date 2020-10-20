@@ -95,7 +95,7 @@ def diag_element_plot(normcovmat, totnormcovmat, expsqrtdiags, descrip, label):
     ax2.vlines(startlocs_lines, ymin, ymax, linestyles="dashed")
     ax2.margins(x=0, y=0)
     ax2.legend(fontsize=15)
-    plt.savefig(f"../../plots/covmats/diag_covmat_{label}.png")
+    plt.savefig(f"../../plots/covmats/diag_covmat_{descrip}.png")
     return fig_diag
 
 def make_covmat(label, proton, nuclear, expcov):
@@ -138,7 +138,7 @@ def make_covmat(label, proton, nuclear, expcov):
     ax.vlines(startlocs_lines, ymin, ymax, linestyles="dashed")
     ax.margins(x=0, y=0)
     ax.legend(fontsize=15)
-  #  plt.savefig(f"../../plots/covmats/diag_covmat_{label}.png")
+    plt.savefig(f"../../plots/covmats/shift.png")
     
     covmat = (1/nnuclearrep) * deltas@deltas.T
     covmat_df = pd.DataFrame(covmat, index=proton.index, columns=proton.index)
