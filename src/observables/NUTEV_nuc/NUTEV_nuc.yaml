@@ -7,11 +7,11 @@ theoryid: 53
 use_cuts: fromfit
 
 fit: 130920-nnpdf40_jcm_iterated_70k_epochs
-pdf: nNNPDF20_nlo_as_0118_Fe56
+pdf: nNNPDF20_nlo_as_0118_p_A56_Z26
 
 dataset_inputs:
-         - dataset: NTVNUDMNFe
-         - dataset: NTVNBDMNFe
+         - {dataset: NTVNUDMNFe, cfac: [MAS]}
+         - {dataset: NTVNBDMNFe, cfac: [MAS]}
 
 actions_:
    - group_result_table

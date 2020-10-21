@@ -7,7 +7,7 @@ theoryid: 53
 use_cuts: fromfit
 
 fit: 130920-nnpdf40_jcm_iterated_70k_epochs
-pdf: nNNPDF20_nlo_as_0118_Cu64
+pdf: nNNPDF20_nlo_as_0118_p_A64_Z32
 
 dataset_inputs:
          - dataset: DYE605
