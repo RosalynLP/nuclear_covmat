@@ -1,0 +1,18 @@
+meta:
+   author: Rosalyn Pearson
+   title: Theoretical predictions
+
+theoryid: 53
+
+use_cuts: nocuts
+
+fit: 130920-nnpdf40_jcm_iterated_70k_epochs
+pdf: nNNPDF20_nlo_as_0118_p_A208_Z82 #nNNPDF20_nlo_as_0118_Pb208
+
+dataset_inputs:
+         - dataset: CHORUSNUPb
+         - dataset: CHORUSNBPb
+
+actions_:
+   - group_result_table
+   - groups_covmat
