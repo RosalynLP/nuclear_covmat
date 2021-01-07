@@ -4,7 +4,7 @@ meta:
 
 theoryid: 53
 
-use_cuts: fromfit
+use_cuts: nocuts
 
 fit: 130920-nnpdf40_jcm_iterated_70k_epochs
 pdf: nNNPDF20_nlo_as_0118_p_A56_Z26
