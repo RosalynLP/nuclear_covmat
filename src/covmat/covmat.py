@@ -123,9 +123,9 @@ def make_covmat(label, proton, nuclear, expcov):
     err = np.std(nuclear_reps - proton_repeat, axis=1)
   
     fig, ax = plt.subplots(figsize=(20,7))
-    ax.plot(100*(shift/D).values, color="k")
-    ax.plot(100*((shift-err)/D).values, color="k", alpha=0.5)
-    ax.plot(100*((shift+err)/D).values, color="k", alpha=0.5)
+    ax.errorbar(np.arange(len(shift)), 100*(shift/D).values, yerr=100*(err/D).values, color="k")
+    #ax.plot(100*((shift-err)/D).values, color="k", alpha=0.5)
+   # ax.plot(100*((shift+err)/D).values, color="k", alpha=0.5)
     ax.set_ylabel("% of data", fontsize=20)
     ax.set_title("Shift", fontsize=25)
     ticklocs, ticklabels, startlocs = matrix_plot_labels(proton)
